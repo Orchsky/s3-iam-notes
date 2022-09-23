@@ -1,0 +1,29 @@
+09/22/2022 Thursday 
+
+1. Can you utilize S3 bucket for dynamic website hosting? Answer: NO 
+2. S3 bucket bucket names must be globally unique: Because S3 buckets are used for domain
+purposes 
+3. S3 and IAM are global resources 
+4. Even though S3 is global resources, during bucket creation region must be 
+selected. Because of compliance/regulation/rules 
+5. Based on which criteria we pick the region? compliance, latency 
+6. Is Cloud secure by default? Yes. Shared Responsobility Model 
+7. Bucket ACL always must be checked 
+8. Bucket versioning --> Prevent Accidential deletion 
+9. 2 types of encryption --> 1) Encryption at Rest and 2) Encryption in Transit 
+10. How Do you make sure bucket ACL (Access Control List) always blocked? 1) AWS SCP(Service Control Policy)
+Policy Driven and 2) Event Driven (Python)
+11. /* in bucket policy means all the object inside bucket 
+12. For Security reasons default value of Effect is Deny 
+13. Lets say we belive our solution is correct but it's not working. 1) We will troubleshoot/debug and 
+try to find root cause of the problem. 
+14. If problem/issue can be fixed in the future we call TECHNICAL DEBT/DEBIT
+15. CRUD operations --> Create, Read, Update and Delete 
+16. Granular Permissions --> Only required premissions, nothing more than that. (Golden rule of IAM)
+17. As a DevSecOps engineer you need to give acccess to S3. Any matrix, manual or any doc. for that? -->
+It depends. 1) It depends which environment. If environment is dev, sandbox, playground (lower environments)
+Why not giving full access but you need to enforce the person to document all the process and based on our contemplation 
+we will lock down the permissions . 
+18. Who decides what kind of permission we need to grant? 50 AWS accounts --> 15 accounts - Operations team,
+20 - Solutions team and 15 account - Config Management. Transparency is a key. Must be communicated to Seniors/Directors 
+via email.
