@@ -27,3 +27,17 @@ we will lock down the permissions .
 18. Who decides what kind of permission we need to grant? 50 AWS accounts --> 15 accounts - Operations team,
 20 - Solutions team and 15 account - Config Management. Transparency is a key. Must be communicated to Seniors/Directors 
 via email.
+
+Git commands:
+1. git init 
+2. git add .
+3. git commit -m "Commit message"
+4. git remote add origin "remote repo https url"
+5. git push -u origin master/main 
+6. next time you only run: git push 
+
+Create new branch:
+1. git checkout -b "branch name"
+2. delete branch:  git checkout -d "branch name"
+3. Once push new branch to remote: git push --set-upstream origin "branch name"
+
